@@ -1,0 +1,50 @@
+/* Add to the existing styles.css from the first response */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #00ffaa;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 26, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Form styling */
+#signup-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#form-message {
+    margin-top: 10px;
+    color: #0a0a1a;
+    font-size: 1rem;
+}
